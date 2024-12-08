@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0px;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/meadow-with-mountain-seen-from-w.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 999;
+}
+
+.form-control:focus {
+    border-color: #eee;
+    box-shadow: 0 0 0 0.25rem #3ca55cc8;
+
+}
+
+h1 {
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    position: relative;
+    background-image: linear-gradient(to right, #fff36f, #5eff8f);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 10px;
+}
+
+h1::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    left: 0;
+    bottom: 5px;
+    background-color: rgb(25, 85, 0);
+    transition: height 350ms;
+    z-index: -1;
+}
+
+h1:hover::after {
+    height: 50%;
+}
+
+main {
+    margin: 30px;
+    padding: 10px;
+}
+
+.inputs {
+    border-top: dotted 2px #6cff98;
+    border-bottom: dotted 2px #6cff98;
+}
+
+h2 {
+    margin: 30px 0;
+    font-family: "Righteous", cursive;
+    background-image: linear-gradient(to right, #4ed476, #e0d55b);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.inputs {
+    color: yellowgreen;
+}
+
+.btn-outline-light {
+    background-color: #eeeeee22;
+}
+
+.form-control {
+    background-image: linear-gradient(to right, #ceffdcbb, #58553b80);
+    background-color: #ffffffbb;
+}
+
+.table>:not(caption)>*>* {
+    background-color: transparent;
+    border-bottom-width: 1px;
+    border-color: #6cff98;
+}
+
+.btn:hover {
+    background-image: linear-gradient(to right, #5eff8e80, #58553b80);
+
+}
+
+.Visit-btn:hover {
+    background-image: linear-gradient(to right, #ff5e5e80, #58553b80);
+}
